@@ -45,33 +45,33 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 # Список компонентов:
 
-- Кнопка
-- Обычная
-- Закругленная
+* Кнопка
+ * Обычная
+ * Закругленная
 
-- Поле ввода текста (Input)
-- Обычное
-- Для поиска
+* Поле ввода текста (Input)
+ * Обычное
+ * Для поиска
 
-- Radio button
-- Checkbox
+* Radio button
+* Checkbox
 
-- DropDown (Select)
+* DropDown (Select)
 
-- Вкладки
-- Основные
-- Дополнительные
+* Вкладки
+ * Основные
+ * Дополнительные
 
-- Пагинация
+* Пагинация
 
-- Pre-loader
+* Pre-loader
 
-- Таблица
+* Таблица
 
-- Модальное окно (Popup)
+* Модальное окно (Popup)
 
-- Breadcrums
+* Breadcrums
 
-- Divider (Разделительная линия)
+* Divider (Разделительная линия)
 
-- Tooltip
+* Tooltip
