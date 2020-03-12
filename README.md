@@ -46,12 +46,12 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 # Список компонентов:
 
 * Кнопка
- * Обычная
- * Закругленная
+  * Обычная
+  * Закругленная
 
 * Поле ввода текста (Input)
- * Обычное
- * Для поиска
+  * Обычное
+  * Для поиска
 
 * Radio button
 * Checkbox
@@ -59,8 +59,8 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 * DropDown (Select)
 
 * Вкладки
- * Основные
- * Дополнительные
+  * Основные
+  * Дополнительные
 
 * Пагинация
 
