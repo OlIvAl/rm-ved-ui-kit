@@ -2,6 +2,7 @@
   "name": "rm-ved-ui-kit",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://olival.github.io/rm-ved-ui-kit/",
   "dependencies": {
     "@material-ui/core": "^4.9.5",
     "@storybook/addon-docs": "^5.3.14",
