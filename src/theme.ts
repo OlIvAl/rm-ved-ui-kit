@@ -15,35 +15,34 @@ export const theme = createMuiTheme({
     error: {
       main: "#FF0000"
     },
-    divider: "rgba(225, 227, 233, 1)"
+    divider: "rgba(225, 227, 233, 1)",
+    text: {
+      primary: "rgba(29, 30, 32, 0.87)",
+      secondary: "rgba(29, 30, 32, 0.54)",
+      disabled: "rgba(29, 30, 32, 0.38)",
+      hint: "rgba(29, 30, 32, 0.38)"
+    }
   },
   shape: {
     borderRadius: 4
+  },
+  typography: {
+    fontSize: 14,
+    htmlFontSize: 18,
+    button: {
+      textTransform: "none"
+    }
+  },
+  overrides: {
+    MuiOutlinedInput: {
+      input: {
+        padding: "6px 12px"
+      }
+    },
+    MuiSelect: {
+      outlined: {
+        padding: "8px 36px 8px 12px"
+      }
+    }
   }
 });
-
-/*
-
-Кастомизация темы.
-
-Primary color - 17BB4F
-Primary contrastText: "#ffffff"
-Secondary color - C566DA
-Error color - FF0000
-Shapes border radius - 4
-
-Grey colors: 797A7E, C3C5CB, E1E3E9, EDEEF3
-Text color - 1D1E20
-Black - 1D1E20
-
-Typography (Font / size / line):
-Roboto Bold / 24 / 32
-Roboto Regular / 18 / 28
-Roboto Medium / 18 / 28
-Roboto Regular / 16 / 20
-Roboto Medium/ 16 / 20
-Roboto Regular / 14 / 20
-Roboto Medium / 14 / 20
-Roboto Regular / 12 / 16
-
- */
