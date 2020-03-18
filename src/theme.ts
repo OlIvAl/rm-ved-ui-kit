@@ -43,6 +43,16 @@ export const theme = createMuiTheme({
       outlined: {
         padding: "8px 36px 8px 12px"
       }
+    },
+    MuiTabs: {
+      root: {
+        minHeight: 36
+      }
+    },
+    MuiTab: {
+      root: {
+        minHeight: 36
+      }
     }
   }
 });
