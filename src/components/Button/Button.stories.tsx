@@ -23,6 +23,13 @@ export const ContainedButtons = () => {
     <ThemeProvider theme={theme}>
       <div className={classes.root}>
         <Button variant="contained">Default</Button>
+        <Button variant="outlined">Default outlined</Button>
+        <Button variant="outlined" size="small">
+          Outlined small
+        </Button>
+        <Button variant="outlined" size="large">
+          Outlined large
+        </Button>
         <Button variant="contained" color="primary">
           Primary
         </Button>
