@@ -32,7 +32,7 @@ const rows = [
   createData("Gingerbread", 356, 16.0, 49, 3.9)
 ];
 
-export const CustomDivider = () => {
+export const Tables = () => {
   return (
     <ThemeProvider theme={theme}>
       <TableContainer component={Paper}>

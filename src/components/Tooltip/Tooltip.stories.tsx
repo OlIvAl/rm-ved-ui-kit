@@ -1,5 +1,5 @@
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
+import { ThemeProvider, withStyles } from "@material-ui/core/styles";
 import { theme } from "../../theme";
 import { Tooltip } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
@@ -9,32 +9,42 @@ export default {
   component: Tooltip
 };
 
+const CustomTooltip = withStyles({
+  tooltip: {
+    fontSize: 12
+  }
+})(Tooltip);
+
 export const Tooltips = () => {
   return (
     <ThemeProvider theme={theme}>
       <div>
-        <Tooltip title="Text text text" arrow placement="left">
+        <CustomTooltip
+          title="Text text texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext text"
+          arrow
+          placement="left"
+        >
           <Button>Arrow left</Button>
-        </Tooltip>
-        <Tooltip title="Text text text" arrow>
+        </CustomTooltip>
+        <CustomTooltip title="Text text text" arrow>
           <Button>Arrow bottom</Button>
-        </Tooltip>
-        <Tooltip title="Text text text" arrow placement="right">
+        </CustomTooltip>
+        <CustomTooltip title="Text text text" arrow placement="right">
           <Button>Arrow right</Button>
-        </Tooltip>
-        <Tooltip title="Text text text" arrow placement="left">
+        </CustomTooltip>
+        <CustomTooltip title="Text text text" arrow placement="left">
           <Button>Arrow left</Button>
-        </Tooltip>
+        </CustomTooltip>
       </div>
       <div>
-        <Tooltip title="Text text text" arrow placement="top">
+        <CustomTooltip title="Text text text" arrow placement="top">
           <Button>Arrow top</Button>
-        </Tooltip>
+        </CustomTooltip>
       </div>
       <div>
-        <Tooltip title="Text text text" arrow placement="top">
+        <CustomTooltip title="Text text text" arrow placement="top">
           <Button>Arrow top</Button>
-        </Tooltip>
+        </CustomTooltip>
       </div>
     </ThemeProvider>
   );

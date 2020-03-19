@@ -29,7 +29,11 @@ export const theme = createMuiTheme({
   typography: {
     body1: {
       fontSize: "0.875rem",
-      lineHeight: 1.43
+      lineHeight: 1.43,
+      color: "#1D1E20"
+    },
+    body2: {
+      color: "#1D1E20"
     },
     button: {
       textTransform: "none"
@@ -38,7 +42,9 @@ export const theme = createMuiTheme({
   overrides: {
     MuiOutlinedInput: {
       input: {
-        padding: "6px 12px"
+        height: 32,
+        padding: "6px 12px",
+        boxSizing: "border-box"
       }
     },
     MuiSelect: {
@@ -48,6 +54,7 @@ export const theme = createMuiTheme({
     },
     MuiTabs: {
       root: {
+        color: "#1D1E20",
         minHeight: 36
       }
     },
