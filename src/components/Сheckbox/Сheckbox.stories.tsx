@@ -1,7 +1,5 @@
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
 import Checkbox from "@material-ui/core/Checkbox";
-import { theme } from "../../theme";
 
 export default {
   title: "Checkboxes",
@@ -10,7 +8,7 @@ export default {
 
 export const Checkboxes = () => {
   return (
-    <ThemeProvider theme={theme}>
+    <>
       <div>
         <Checkbox color="primary" />
         <Checkbox color="secondary" />
@@ -21,6 +19,6 @@ export const Checkboxes = () => {
         <Checkbox size="small" color="secondary" />
         <Checkbox size="small" color="default" />
       </div>
-    </ThemeProvider>
+    </>
   );
 };

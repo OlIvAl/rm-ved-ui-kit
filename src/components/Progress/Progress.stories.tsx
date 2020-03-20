@@ -1,6 +1,4 @@
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { theme } from "../../theme";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
 export default {
@@ -8,11 +6,11 @@ export default {
   component: CircularProgress
 };
 
-export const PreLoaders = () => {
+export const Progress = () => {
   return (
-    <ThemeProvider theme={theme}>
+    <>
       <CircularProgress />
       <CircularProgress color="secondary" />
-    </ThemeProvider>
+    </>
   );
 };

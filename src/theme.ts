@@ -2,9 +2,6 @@ import { createMuiTheme } from "@material-ui/core/styles";
 
 export const theme = createMuiTheme({
   palette: {
-    common: {
-      black: "#1D1E20"
-    },
     primary: {
       main: "#17BB4F",
       contrastText: "#FFFFFF"
@@ -15,13 +12,7 @@ export const theme = createMuiTheme({
     error: {
       main: "#FF0000"
     },
-    divider: "rgba(225, 227, 233, 1)",
-    text: {
-      primary: "rgba(29, 30, 32, 0.87)",
-      secondary: "rgba(29, 30, 32, 0.54)",
-      disabled: "rgba(29, 30, 32, 0.38)",
-      hint: "rgba(29, 30, 32, 0.38)"
-    }
+    divider: "rgba(225, 227, 233, 1)"
   },
   shape: {
     borderRadius: 4
@@ -29,11 +20,7 @@ export const theme = createMuiTheme({
   typography: {
     body1: {
       fontSize: "0.875rem",
-      lineHeight: 1.43,
-      color: "#1D1E20"
-    },
-    body2: {
-      color: "#1D1E20"
+      lineHeight: 1.43
     },
     button: {
       textTransform: "none"
@@ -42,9 +29,8 @@ export const theme = createMuiTheme({
   overrides: {
     MuiOutlinedInput: {
       input: {
-        height: 32,
-        padding: "6px 12px",
-        boxSizing: "border-box"
+        height: "1.429em",
+        padding: "6px 12px"
       }
     },
     MuiSelect: {
@@ -54,7 +40,6 @@ export const theme = createMuiTheme({
     },
     MuiTabs: {
       root: {
-        color: "#1D1E20",
         minHeight: 36
       }
     },
@@ -63,5 +48,19 @@ export const theme = createMuiTheme({
         minHeight: 36
       }
     }
+  }
+});
+
+export const roundedTheme = createMuiTheme({
+  ...theme,
+  typography: {
+    ...theme.typography,
+    button: {
+      ...theme.typography.button,
+      lineHeight: 1.43
+    }
+  },
+  shape: {
+    borderRadius: 16
   }
 });

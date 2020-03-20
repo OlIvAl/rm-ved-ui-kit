@@ -1,27 +1,22 @@
 import React from "react";
-import { ThemeProvider, withStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
-import { theme } from "../../theme";
+import { roundedTheme } from "../../theme";
+import { ThemeProvider } from "@material-ui/styles";
 
 export default {
   title: "Buttons",
   component: Button
 };
 
-const RoundedButton = withStyles({
-  root: {
-    borderRadius: 16,
-    lineHeight: 1.45
-  }
-})(Button);
-
-export const RoundedButtons = () => {
+export const RoundedButton = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <RoundedButton color="primary" variant="outlined">
+    <ThemeProvider theme={roundedTheme}>
+      <Button color="primary" variant="outlined">
         Rounded
-      </RoundedButton>
-      <Button variant="outlined">Default outlined</Button>
+      </Button>
+      <Button color="secondary" variant="outlined">
+        Rounded
+      </Button>
     </ThemeProvider>
   );
 };

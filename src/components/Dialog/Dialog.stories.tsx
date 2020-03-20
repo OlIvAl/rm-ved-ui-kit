@@ -1,6 +1,4 @@
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { theme } from "../../theme";
 import Dialog from "@material-ui/core/Dialog";
 import Button from "@material-ui/core/Button";
 import DialogTitle from "@material-ui/core/DialogTitle";
@@ -24,7 +22,7 @@ export const Dialogs = () => {
   };
 
   return (
-    <ThemeProvider theme={theme}>
+    <>
       <Button variant="outlined" color="primary" onClick={handleClickOpen}>
         Open dialog
       </Button>
@@ -57,6 +55,6 @@ export const Dialogs = () => {
           </Button>
         </DialogActions>
       </Dialog>
-    </ThemeProvider>
+    </>
   );
 };

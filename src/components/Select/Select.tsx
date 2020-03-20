@@ -1,6 +1,4 @@
 import React from "react";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { theme } from "../../theme";
 import { Select } from "@material-ui/core";
 import MenuItem from "@material-ui/core/MenuItem";
 
@@ -9,7 +7,7 @@ export default {
   component: Select
 };
 
-export const DropDowns = () => {
+export const Selects = () => {
   const [firstSelectValue, setFirstSelectValue] = React.useState("Value 1");
   const [secondSelectValue, setSecondSelectValue] = React.useState("");
 
@@ -25,7 +23,7 @@ export const DropDowns = () => {
     setSecondSelectValue(event.target.value as string);
   };
   return (
-    <ThemeProvider theme={theme}>
+    <>
       <div>
         <Select
           value={firstSelectValue}
@@ -54,6 +52,6 @@ export const DropDowns = () => {
           <MenuItem value="Value 3 Value 3">Value 3 Value3</MenuItem>
         </Select>
       </div>
-    </ThemeProvider>
+    </>
   );
 };

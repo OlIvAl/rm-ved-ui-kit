@@ -1,7 +1,6 @@
 import React from "react";
-import { makeStyles, ThemeProvider } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
-import { theme } from "../../theme";
 
 export default {
   title: "Buttons",
@@ -16,33 +15,27 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export const ContainedButtons = () => {
+export const Buttons = () => {
   const classes = useStyles();
 
   return (
-    <ThemeProvider theme={theme}>
-      <div className={classes.root}>
-        <Button variant="contained">Default</Button>
-        <Button variant="outlined">Default outlined</Button>
-        <Button variant="outlined" size="small">
-          Outlined small
-        </Button>
-        <Button variant="outlined" size="large">
-          Outlined large
-        </Button>
-        <Button variant="contained" color="primary">
-          Primary
-        </Button>
-        <Button variant="contained" color="secondary">
-          Secondary
-        </Button>
-        <Button variant="contained" disabled={true}>
-          Disabled
-        </Button>
-        <Button variant="contained" color="primary" href="#">
-          Link
-        </Button>
-      </div>
-    </ThemeProvider>
+    <div className={classes.root}>
+      <Button variant="outlined">Outlined</Button>
+      <Button variant="outlined" color="primary">
+        Outlined
+      </Button>
+      <Button variant="outlined" color="secondary">
+        Outlined
+      </Button>
+      <Button variant="contained" color="primary">
+        Primary
+      </Button>
+      <Button variant="contained" color="secondary">
+        Secondary
+      </Button>
+      <Button variant="contained" disabled={true}>
+        Disabled
+      </Button>
+    </div>
   );
 };

@@ -1,6 +1,5 @@
 import React from "react";
-import { ThemeProvider, withStyles } from "@material-ui/core/styles";
-import { theme } from "../../theme";
+import { withStyles } from "@material-ui/core/styles";
 import { Tooltip } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 
@@ -17,7 +16,7 @@ const CustomTooltip = withStyles({
 
 export const Tooltips = () => {
   return (
-    <ThemeProvider theme={theme}>
+    <>
       <div>
         <CustomTooltip
           title="Text text texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext text"
@@ -46,6 +45,6 @@ export const Tooltips = () => {
           <Button>Arrow top</Button>
         </CustomTooltip>
       </div>
-    </ThemeProvider>
+    </>
   );
 };
