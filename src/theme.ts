@@ -51,12 +51,9 @@ export const theme = createMuiTheme({
   }
 });
 
-export const roundedTheme = createMuiTheme({
-  ...theme,
+export const roundedTheme = createMuiTheme(theme, {
   typography: {
-    ...theme.typography,
     button: {
-      ...theme.typography.button,
       lineHeight: 1.43
     }
   },
