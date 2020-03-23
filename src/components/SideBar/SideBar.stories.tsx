@@ -25,7 +25,7 @@ const useDrawerStyles = makeStyles((theme: Theme) =>
   })
 );
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme: Theme) => ({
   list: {
     padding: 0
   },
@@ -41,10 +41,10 @@ const useStyles = makeStyles({
   },
   icon: { minWidth: "auto" },
   text: {
-    color: "#ffffff",
+    color: theme.palette.common.white,
     flex: 0
   }
-});
+}));
 
 export const SideBar = () => {
   const styles = useStyles();
