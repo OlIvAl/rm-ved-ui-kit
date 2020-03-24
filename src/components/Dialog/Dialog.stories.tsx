@@ -50,8 +50,8 @@ export const Dialogs = () => {
           </Typography>
         </DialogContent>
         <DialogActions>
-          <Button autoFocus onClick={handleClose} color="primary">
-            Save changes
+          <Button variant="contained" color="primary">
+            Primary
           </Button>
         </DialogActions>
       </Dialog>
