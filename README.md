@@ -54,7 +54,12 @@ To learn React, check out the [React documentation](https://reactjs.org/).
   * Для поиска
 
 * Radio button
+
 * Checkbox
+
+* Header
+
+* SideBar (Боковое меню)
 
 * DropDown (Select)
 
@@ -64,11 +69,11 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 * Пагинация
 
-* Pre-loader
+* Process
 
 * Таблица
 
-* Модальное окно (Popup)
+* Диалоговое окно (Popup)
 
 * Breadcrums
 
