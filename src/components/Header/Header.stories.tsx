@@ -8,7 +8,7 @@ export default {
   component: AppBar
 };
 
-export const Inputs = () => {
+export const Header = () => {
   return (
     <AppBar position="static" color="default">
       <Toolbar>
