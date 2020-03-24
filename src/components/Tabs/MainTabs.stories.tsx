@@ -29,10 +29,10 @@ const CustomTab = withStyles((theme: Theme) =>
     },
     selected: {
       color: theme.palette.primary.contrastText,
-      backgroundColor: theme.palette.primary.main
+      backgroundColor: theme.palette.common.black
     }
   })
-)((props: StyledTabProps) => <Tab disableRipple {...props} />);
+)((props: StyledTabProps) => <Tab {...props} />);
 
 interface StyledTabProps {
   label: string;

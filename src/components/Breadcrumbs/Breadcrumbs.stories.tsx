@@ -11,13 +11,13 @@ export const Breadcrumb = () => {
   return (
     <Breadcrumbs>
       <Link color="primary" href="#">
-        Material-UI
+        Main
       </Link>
       <Link color="primary" href="#">
-        Core
+        Page
       </Link>
-      <Link color="textSecondary" href="#">
-        Breadcrumb
+      <Link underline="none" color="textSecondary">
+        Disabled
       </Link>
     </Breadcrumbs>
   );

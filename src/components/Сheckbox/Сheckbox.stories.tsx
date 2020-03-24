@@ -1,5 +1,6 @@
 import React from "react";
 import Checkbox from "@material-ui/core/Checkbox";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
 
 export default {
   title: "Checkboxes",
@@ -10,14 +11,33 @@ export const Checkboxes = () => {
   return (
     <>
       <div>
-        <Checkbox color="primary" />
-        <Checkbox color="secondary" />
-        <Checkbox color="default" />
+        <FormControlLabel
+          value="female"
+          control={<Checkbox color="primary" />}
+          label="Primary"
+        />
       </div>
       <div>
-        <Checkbox size="small" color="primary" />
-        <Checkbox size="small" color="secondary" />
-        <Checkbox size="small" color="default" />
+        <FormControlLabel
+          value="female"
+          control={<Checkbox color="secondary" />}
+          label="Secondary"
+        />
+      </div>
+      <div>
+        <FormControlLabel
+          value="female"
+          control={<Checkbox color="default" />}
+          label="Default"
+        />
+      </div>
+
+      <div>
+        <FormControlLabel
+          value="female"
+          control={<Checkbox color="secondary" disabled />}
+          label="Disabled"
+        />
       </div>
     </>
   );

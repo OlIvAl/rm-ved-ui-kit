@@ -20,6 +20,9 @@ export const Buttons = () => {
 
   return (
     <div className={classes.root}>
+      <Button variant="outlined" disabled>
+        Disabled
+      </Button>
       <Button variant="outlined">Outlined</Button>
       <Button variant="outlined" color="primary">
         Outlined

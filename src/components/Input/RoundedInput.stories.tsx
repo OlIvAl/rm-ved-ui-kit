@@ -1,5 +1,5 @@
 import React from "react";
-import { withStyles } from "@material-ui/core/styles";
+import { makeStyles, withStyles } from "@material-ui/core/styles";
 import OutlinedInput from "@material-ui/core/OutlinedInput/OutlinedInput";
 import SearchOutlinedIcon from "@material-ui/icons/SearchOutlined";
 import { InputAdornment } from "@material-ui/core";
@@ -11,6 +11,14 @@ export default {
   component: OutlinedInput
 };
 
+const useStyles = makeStyles(theme => ({
+  root: {
+    "& > *": {
+      margin: theme.spacing(1)
+    }
+  }
+}));
+
 const SearchIcon = withStyles({
   root: {
     color: "rgb(120,122,126)",
@@ -19,18 +27,22 @@ const SearchIcon = withStyles({
 })(SearchOutlinedIcon);
 
 export const RoundedInputs = () => {
+  const classes = useStyles();
+
   return (
     <ThemeProvider theme={roundedTheme}>
-      <OutlinedInput color="primary" placeholder="placeholder" />
-      <OutlinedInput
-        color="primary"
-        placeholder="search"
-        startAdornment={
-          <InputAdornment position="start">
-            <SearchIcon fontSize="small" />
-          </InputAdornment>
-        }
-      />
+      <div className={classes.root}>
+        <OutlinedInput color="primary" placeholder="placeholder" />
+        <OutlinedInput
+          color="primary"
+          placeholder="search"
+          startAdornment={
+            <InputAdornment position="start">
+              <SearchIcon fontSize="small" />
+            </InputAdornment>
+          }
+        />
+      </div>
     </ThemeProvider>
   );
 };
