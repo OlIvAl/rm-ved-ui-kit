@@ -11,8 +11,7 @@ export const theme = createMuiTheme({
     },
     error: {
       main: "#FF0000"
-    },
-    divider: "rgba(225, 227, 233, 1)"
+    }
   },
   shape: {
     borderRadius: 4

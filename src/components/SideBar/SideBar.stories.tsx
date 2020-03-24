@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     alignItems: "center",
     height: 124,
     "&:hover": {
-      backgroundColor: "#797a7e"
+      backgroundColor: theme.palette.grey[600]
     }
   },
   icon: { minWidth: "auto" },

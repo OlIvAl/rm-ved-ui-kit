@@ -12,7 +12,7 @@ const CustomTabs = withStyles(theme => ({
   root: {
     display: "inline-flex",
     borderRadius: theme.shape.borderRadius * 6,
-    backgroundColor: "#edeef3"
+    backgroundColor: theme.palette.grey[200]
   },
   indicator: {
     display: "none"
@@ -24,7 +24,7 @@ const CustomTab = withStyles((theme: Theme) =>
     root: {
       borderRadius: theme.shape.borderRadius * 6,
       "&:hover:not(.Mui-selected)": {
-        backgroundColor: "#E1E3E9"
+        backgroundColor: theme.palette.grey[300]
       }
     },
     selected: {
