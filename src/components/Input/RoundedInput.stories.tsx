@@ -19,11 +19,11 @@ const useStyles = makeStyles((theme: Theme) => ({
   }
 }));
 
-const SearchIcon = withStyles((theme: Theme) => ({
+const SearchIcon = withStyles({
   root: {
     pointerEvents: "none"
   }
-}))(SearchOutlinedIcon);
+})(SearchOutlinedIcon);
 
 export const RoundedInputs = () => {
   const classes = useStyles();
