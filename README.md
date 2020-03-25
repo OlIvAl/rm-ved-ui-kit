@@ -80,3 +80,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 * Divider (Разделительная линия)
 
 * Tooltip
+
+* Заголовки
+  * Title
+  * Subtitle
