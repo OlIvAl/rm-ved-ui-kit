@@ -17,6 +17,14 @@ export const theme = createMuiTheme({
     borderRadius: 4
   },
   typography: {
+    h1: { fontWeight: 700 },
+    h2: { fontWeight: 700 },
+    h3: { fontWeight: 700 },
+    h4: { fontWeight: 700 },
+    h5: { fontWeight: 700 },
+    h6: { fontWeight: 700 },
+    subtitle1: { fontWeight: 500 },
+    subtitle2: { fontWeight: 500 },
     body1: {
       fontSize: "0.875rem",
       lineHeight: 1.43
