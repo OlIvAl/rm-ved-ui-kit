@@ -1,13 +1,14 @@
 import React from "react";
 import { Select } from "@material-ui/core";
 import MenuItem from "@material-ui/core/MenuItem";
+import Grid from "@material-ui/core/Grid";
 
 export default {
-  title: "DropDowns",
+  title: "Dropdowns",
   component: Select
 };
 
-export const Selects = () => {
+export const Dropdowns = () => {
   const [firstSelectValue, setFirstSelectValue] = React.useState("Value 1");
   const [secondSelectValue, setSecondSelectValue] = React.useState("");
 
@@ -23,8 +24,8 @@ export const Selects = () => {
     setSecondSelectValue(event.target.value as string);
   };
   return (
-    <>
-      <div>
+    <Grid container direction="column">
+      <Grid item xs={6}>
         <Select
           value={firstSelectValue}
           onChange={handleFirstSelectChange}
@@ -35,7 +36,7 @@ export const Selects = () => {
           <MenuItem value="Value 3">Value 3</MenuItem>
           <MenuItem value="Value 3 Value 3">Value 3 Value3</MenuItem>
         </Select>
-      </div>
+      </Grid>
       <div>
         <Select
           displayEmpty
@@ -52,6 +53,6 @@ export const Selects = () => {
           <MenuItem value="Value 3 Value 3">Value 3 Value3</MenuItem>
         </Select>
       </div>
-    </>
+    </Grid>
   );
 };
