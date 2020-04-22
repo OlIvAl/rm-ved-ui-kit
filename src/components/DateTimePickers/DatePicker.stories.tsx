@@ -2,7 +2,6 @@ import "date-fns";
 import React from "react";
 import { DatePicker, KeyboardDatePicker } from "@material-ui/pickers";
 import { Grid } from "@material-ui/core";
-import { withStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 
 export default {
@@ -10,26 +9,31 @@ export default {
   component: KeyboardDatePicker
 };
 
-const CustomKeyboardDatePicker = withStyles({})(KeyboardDatePicker);
-
 export const DatePickers = () => {
-  // The first commit of Material-UI
   const [selectedDate, setSelectedDate] = React.useState<Date | null>(
-    new Date("2014-08-18T21:11:54")
+    new Date()
   );
 
   const handleDateChange = (date: Date | null) => {
     setSelectedDate(date);
   };
 
+  const handleDisableDate = (day: Date | null) => {
+    let disbledDay: number | null = selectedDate && selectedDate.getDate() + 3;
+    return !!(day && day.getDate() === disbledDay);
+  };
+
   return (
     <Grid container={true} direction="column">
       <Grid item xs={12}>
-        <Typography>Без тулбара</Typography>
-        <CustomKeyboardDatePicker
+        <Typography>Без тулбара (3-й день не активный)</Typography>
+        <KeyboardDatePicker
+          emptyLabel="дд/мм/гггг"
+          disablePast
+          minDateMessage="Нельзя выбрать прошедшую дату"
           disableToolbar
           variant="inline"
-          format="MM/dd/yyyy"
+          format="dd/MM/yyyy"
           value={selectedDate}
           invalidDateMessage="Неправильный формат даты"
           onChange={handleDateChange}
@@ -37,14 +41,18 @@ export const DatePickers = () => {
           KeyboardButtonProps={{
             "aria-label": "change date"
           }}
+          shouldDisableDate={handleDisableDate}
         />
       </Grid>
       <Typography>Без тулбара и без иконки календаря</Typography>
       <Grid item xs={12}>
         <DatePicker
+          emptyLabel="дд/мм/гггг"
           disableToolbar
+          disablePast
+          minDateMessage="Нельзя выбрать прошедшую дату"
           variant="inline"
-          format="MM/dd/yyyy"
+          format="dd/MM/yyyy"
           value={selectedDate}
           onChange={handleDateChange}
           invalidDateMessage="Неправильный формат даты"
@@ -53,9 +61,11 @@ export const DatePickers = () => {
       </Grid>
       <Grid item>
         <Typography>С тулбаром</Typography>
-        <CustomKeyboardDatePicker
+        <KeyboardDatePicker
           variant="inline"
-          format="MM/dd/yyyy"
+          format="dd/MM/yyyy"
+          disablePast
+          minDateMessage="Нельзя выбрать прошедшую дату"
           value={selectedDate}
           onChange={handleDateChange}
           inputVariant="outlined"
@@ -69,7 +79,9 @@ export const DatePickers = () => {
         <Typography>В диалоговом окне</Typography>
         <KeyboardDatePicker
           inputVariant="outlined"
-          format="MM/dd/yyyy"
+          format="dd/MM/yyyy"
+          disablePast
+          minDateMessage="Нельзя выбрать прошедшую дату"
           value={selectedDate}
           invalidDateMessage="Неправильный формат даты"
           onChange={handleDateChange}

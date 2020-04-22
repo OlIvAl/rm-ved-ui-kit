@@ -12,9 +12,8 @@ export default {
 };
 
 export const TimePickers = () => {
-  // The first commit of Material-UI
   const [selectedDate, setSelectedDate] = React.useState<Date | null>(
-    new Date("2014-08-18T21:11:54")
+    new Date()
   );
 
   const handleDateChange = (date: Date | null) => {
@@ -26,6 +25,7 @@ export const TimePickers = () => {
       <div>
         <KeyboardTimePicker
           disableToolbar
+          minutesStep={5}
           inputVariant="outlined"
           variant="inline"
           ampm={false}
@@ -40,6 +40,7 @@ export const TimePickers = () => {
       <div>
         <TimePicker
           disableToolbar
+          minutesStep={5}
           inputVariant="outlined"
           variant="inline"
           ampm={false}
@@ -52,6 +53,7 @@ export const TimePickers = () => {
         <KeyboardTimePicker
           inputVariant="outlined"
           variant="inline"
+          minutesStep={5}
           ampm={false}
           value={selectedDate}
           onChange={handleDateChange}
@@ -66,6 +68,7 @@ export const TimePickers = () => {
           inputVariant="outlined"
           ampm={false}
           value={selectedDate}
+          minutesStep={5}
           onChange={handleDateChange}
           invalidDateMessage="Неправильный формат времени"
           KeyboardButtonProps={{
