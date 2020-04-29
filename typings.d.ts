@@ -4,3 +4,8 @@
 declare module "@date-io/type" {
   export type DateType = Date;
 }
+
+declare module "*.json" {
+  const value: any;
+  export default value;
+}
