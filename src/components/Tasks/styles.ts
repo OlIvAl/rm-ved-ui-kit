@@ -29,10 +29,18 @@ export const useStyles = makeStyles({
     padding: "8px 16px",
     borderRadius: 4,
     margin: "16px 0",
-    background: "#c3ffd8",
     "&:last-child, &:first-child": {
       margin: 0
     }
+  },
+  expansion: {
+    background: "#c3ffd8"
+  },
+  attract: {
+    background: "#f9e0ff"
+  },
+  service: {
+    background: "#e6eeff"
   },
   taskContent: {
     display: "flex",

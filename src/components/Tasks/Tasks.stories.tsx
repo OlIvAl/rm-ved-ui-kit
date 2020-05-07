@@ -9,9 +9,17 @@ import Card from "@material-ui/core/Card";
 import { useStyles } from "./styles";
 import TASKS from "./tasks.json";
 import SubstitutedIcon from "./icons/SubstitutedIcon";
+import moment from "moment";
 
 export default {
   title: "Tasks"
+};
+
+const getDayCounts = (date: number) => {
+  const today = moment();
+  const deadline = moment.unix(date);
+  const diff = moment(deadline).diff(today, "days");
+  return diff > 0 ? diff : 0;
 };
 
 export const Tasks = () => {
@@ -64,7 +72,11 @@ export const Tasks = () => {
       </div>
       <div className={classes.taskWrapper}>
         {TASKS.map((task: ITask) => (
-          <Card key={task.id} className={classes.task} elevation={0}>
+          <Card
+            key={task.id}
+            className={`${classes.task} ${classes[task.group]}`}
+            elevation={0}
+          >
             <div>
               <Typography variant="subtitle1">{task.companyName}</Typography>
             </div>
@@ -78,8 +90,14 @@ export const Tasks = () => {
                   <Typography>зам</Typography>
                 </div>
               )}
-              {/*TODO расчитать дату*/}
-              <Typography variant="subtitle1">{0}</Typography>
+              <Typography
+                variant="subtitle1"
+                {...(getDayCounts(task.startDeadline)
+                  ? { color: "textPrimary" }
+                  : { color: "error" })}
+              >
+                {getDayCounts(task.startDeadline)}
+              </Typography>
             </div>
           </Card>
         ))}

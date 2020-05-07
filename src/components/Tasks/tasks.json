@@ -4,18 +4,18 @@
     "companyName": "ООО Ромашка",
     "step": "First",
     "trigger": "Наименование триггера",
-    "group": "expansion",
+    "group": "attract",
     "substituted": true,
-    "startDeadline": 1588149769
+    "startDeadline": 1588865304
   },
   {
     "id": "as8d6f8934sf",
     "companyName": "ООО Ромашка",
     "step": "First",
     "trigger": "Наименование триггера",
-    "group": "expansion",
+    "group": "service",
     "substituted": true,
-    "startDeadline": 1588149769
+    "startDeadline": 1591650000
   },
   {
     "id": "as8d6f8566sf",
@@ -24,7 +24,7 @@
     "trigger": "Наименование триггера",
     "group": "expansion",
     "substituted": true,
-    "startDeadline": 1588149769
+    "startDeadline": 1599598800
   },
   {
     "id": "as8d6789a6sf",
@@ -33,14 +33,14 @@
     "trigger": "Наименование триггера",
     "group": "expansion",
     "substituted": true,
-    "startDeadline": 1588149769
+    "startDeadline": 1599598800
   },
   {
     "id": "as8d6f89444f",
     "companyName": "ООО Ромашка",
     "step": "First",
     "trigger": "Наименование триггера",
-    "group": "expansion",
+    "group": "attract",
     "substituted": true,
     "startDeadline": 1588149769
   },
@@ -67,7 +67,7 @@
     "companyName": "ООО Ромашка",
     "step": "First",
     "trigger": "Наименование триггера",
-    "group": "expansion",
+    "group": "service",
     "substituted": true,
     "startDeadline": 1588149769
   },
@@ -85,7 +85,7 @@
     "companyName": "ООО Ромашка",
     "step": "First",
     "trigger": "Наименование триггера",
-    "group": "expansion",
+    "group": "attract",
     "substituted": true,
     "startDeadline": 1588149769
   }
