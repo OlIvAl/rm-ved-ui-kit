@@ -3,12 +3,19 @@
     "outDir": "build/lib",
     "module": "esnext",
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "sourceMap": true,
     "allowJs": false,
     "jsx": "react",
     "moduleResolution": "node",
-    "rootDirs": ["src", "stories"],
+    "rootDirs": [
+      "src",
+      "stories"
+    ],
     "baseUrl": "src",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
@@ -20,8 +27,21 @@
     "declaration": true,
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
   },
-  "include": ["src/**/*", "typings.d.ts"],
-  "exclude": ["node_modules", "build", "scripts"]
+  "include": [
+    "src/**/*",
+    "typings.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts"
+  ]
 }

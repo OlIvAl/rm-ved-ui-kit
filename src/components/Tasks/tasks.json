@@ -5,7 +5,7 @@
     "step": "First",
     "trigger": "Наименование триггера",
     "group": "attract",
-    "substituted": true,
+    "substituted": false,
     "startDeadline": 1588865304
   },
   {
@@ -14,7 +14,7 @@
     "step": "First",
     "trigger": "Наименование триггера",
     "group": "service",
-    "substituted": true,
+    "substituted": false,
     "startDeadline": 1591650000
   },
   {
@@ -23,7 +23,7 @@
     "step": "First",
     "trigger": "Наименование триггера",
     "group": "expansion",
-    "substituted": true,
+    "substituted": false,
     "startDeadline": 1599598800
   },
   {
@@ -32,7 +32,7 @@
     "step": "First",
     "trigger": "Наименование триггера",
     "group": "expansion",
-    "substituted": true,
+    "substituted": false,
     "startDeadline": 1599598800
   },
   {
@@ -41,7 +41,7 @@
     "step": "First",
     "trigger": "Наименование триггера",
     "group": "attract",
-    "substituted": true,
+    "substituted": false,
     "startDeadline": 1588149769
   },
   {
@@ -50,7 +50,7 @@
     "step": "First",
     "trigger": "Наименование триггера",
     "group": "expansion",
-    "substituted": true,
+    "substituted": false,
     "startDeadline": 1588149769
   },
   {
@@ -59,7 +59,7 @@
     "step": "First",
     "trigger": "Наименование триггера",
     "group": "expansion",
-    "substituted": true,
+    "substituted": false,
     "startDeadline": 1588149769
   },
   {
@@ -87,6 +87,6 @@
     "trigger": "Наименование триггера",
     "group": "attract",
     "substituted": true,
-    "startDeadline": 1588149769
+    "startDeadline": 1599598800
   }
 ]

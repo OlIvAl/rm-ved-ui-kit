@@ -37,3 +37,13 @@ declare interface ITask {
    */
   startDeadline: number;
 }
+
+/**
+ * Интерфейс свойств компонента.
+ */
+interface IProps {
+  /**
+   * Список задач.
+   */
+  tasks: ITask[];
+}
