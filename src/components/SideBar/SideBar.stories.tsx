@@ -8,6 +8,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import { ClientsIcon } from "./ClientsIcon";
 import { InfoIcon } from "./InfoIcon";
 import { ChatIcon } from "./ChatIcon";
+import { CoBrowseIcon } from "./CoBrowseIcon";
 
 export default {
   title: "SideBar",
@@ -41,6 +42,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   icon: { minWidth: "auto" },
   text: {
+    whiteSpace: "nowrap",
     color: theme.palette.common.white,
     flex: 0
   }
@@ -70,6 +72,12 @@ export const SideBar = () => {
             <ChatIcon />
           </ListItemIcon>
           <ListItemText className={styles.text} primary="Чат" />
+        </ListItem>
+        <ListItem className={styles.listItem} button>
+          <ListItemIcon className={styles.icon}>
+            <CoBrowseIcon />
+          </ListItemIcon>
+          <ListItemText className={styles.text} primary="Co-browse" />
         </ListItem>
       </List>
     </Drawer>

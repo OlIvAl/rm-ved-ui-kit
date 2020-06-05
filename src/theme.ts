@@ -54,6 +54,11 @@ export const theme = createMuiTheme({
       root: {
         minHeight: 36
       }
+    },
+    MuiTooltip: {
+      tooltip: {
+        fontSize: 12
+      }
     }
   }
 });
